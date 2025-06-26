@@ -6,7 +6,7 @@ let age = document.getElementById("age").value.trim();
 let name = document.getElementById("name").value.trim();
 
 if(age === "" || name === ""){
-	alert("Please enter valid details")
+	alert("Please enter valid details.")
 	return;
 }
 
@@ -26,7 +26,7 @@ let votePromise = new Promise((function(resolve, reject){
 votePromise.then(function(){
 	alert(`Welcome, ${name}. You can vote.`)
 }).catch(function(){
-	alert(`Oh sorry Doe. You aren't old enough`);
+	alert(`Oh sorry Doe. You aren't old enough.`);
 })
 
 })
